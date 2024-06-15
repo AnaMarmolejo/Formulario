@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Formulario.css">
+    <title>Solicitud de Permiso - Recursos Humanos</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Solicitud de Permiso</h1>
+        <form>
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre(s):</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tipo de Permiso</legend>
+                <label for="tipoPermiso">Seleccione el tipo de permiso:</label>
+                <select id="tipoPermiso" name="tipoPermiso" required>
+                    <option value="vacaciones">Vacaciones</option>
+                    <option value="enfermedad">Enfermedad</option>
+                <option value="enfermedad">Pase de Maternidad</option>
+
+                <option value="enfermedad">Pase de Paternidad</option>
+
+                <option value="pase de un día">Pase de un día</option>
+
+                    <option value="permisoPersonal">Permiso Personal</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Area de trabajo</legend>
+                <label for="tipoArea">Seleccione el area en la que trabaja</label>
+                <select id="tipoArea" name="tipoArea" required>
+                    <option value="ventas">Ventas</option>
+                    <option value="transporte">Transporte</option>
+                    <option value="publicidad">Publicidad</option>
+                    <option value="comercial">Comercial</option>
+                    <option value="sistemas">Sistemas</option>
+                    <option value="contabilidad">Contabilidad</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Fecha y Duración</legend>
+                <label for="fechaInicio">Fecha de inicio:</label>
+                <input type="date" id="fechaInicio" name="fechaInicio" required>
+                <label for="fechaInicio">Fecha de Finalización:</label>
+                <input type="date" id="fechaFinal" name="fechaFinal" required>
+                <label for="duracion">Duración (días):</label>
+                <input type="number" id="duracion" name="duracion" min="1" required>
+            </fieldset>
+
+            <button type="submit">Enviar Solicitud</button>
+            <button type="reset">Limpiar Formulario</button>
+            <button type="button">Cancelar</button>
+            <button type="button">Imprimir Solicitud</button>
+        </form>
+    </div>
+    <footer>
+        <hr>
+        <p> Ana Rosa Marmolejo Cervantes 22110082 4°O </p>
+        <hr>
+    </footer>
+
+</body>
+</html>
+
